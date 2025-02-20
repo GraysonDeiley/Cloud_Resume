@@ -1,0 +1,3 @@
+<li style="list-style: none; padding-left: 35px; background: url('bash.png') no-repeat left center; background-size: 20px 20px; background-color: transparent;"><strong>Platforms:</strong> AWS, Azure</li>
+                <li style="list-style: none; padding-left: 35px; background: url('bash.png') no-repeat left center; background-size: contain; background-color: transparent;"><strong>Management:</strong> Terraform, Ansible</li>
+                <li style="list-style: none; padding-left: 35px; background: url('bash.png') no-repeat left center; background-size: contain; background-color: transparent;"><strong>Scripting & Automation:</strong> Bash, Python, Yaml</li></ul>
