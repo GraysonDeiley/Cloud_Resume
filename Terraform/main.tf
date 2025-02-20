@@ -17,36 +17,36 @@ data "aws_region" "current" {}
 data "aws_caller_identity" "current" {}
 
 
-# resource "aws_dynamodb_table" "dynamodb_table" {
-#   name           = "visitorCounterTwo"
-#   billing_mode   = "PROVISIONED"
-#   read_capacity  = 20
-#   write_capacity = 20
-#   hash_key       = "id"
+resource "aws_dynamodb_table" "dynamodb_table" {
+  name           = "visitorCounterTwo"
+  billing_mode   = "PROVISIONED"
+  read_capacity  = 20
+  write_capacity = 20
+  hash_key       = "id"
 
-#   attribute {
-#     name = "id"
-#     type = "S"
-#   }
+  attribute {
+    name = "id"
+    type = "S"
+  }
 
-# }
+}
 
-# resource "aws_dynamodb_table_item" "visitor_counter_item" {
-#   count = 1  # Adjust the number of items as needed
+resource "aws_dynamodb_table_item" "visitor_counter_item" {
+  count = 1  # Adjust the number of items as needed
 
-#   table_name = aws_dynamodb_table.dynamodb_table.name
+  table_name = aws_dynamodb_table.dynamodb_table.name
 
-#   hash_key = "id"
+  hash_key = "id"
 
-#   item = jsonencode({
-#     id = {
-#       S = "counter"  # id is explicitly set as a string "counter"
-#     }
-#     count = {
-#       N = tostring(0)  # count is explicitly set as a number (N) with value 81
-#     }
-#   })
-# }
+  item = jsonencode({
+    id = {
+      S = "counter"  # id is explicitly set as a string "counter"
+    }
+    count = {
+      N = tostring(0)  # count is explicitly set as a number (N) with value 81
+    }
+  })
+}
 
 
 
