@@ -54,7 +54,7 @@ resource "aws_lambda_function" "updateVisitorCountTwo" {
   function_name = "updateVisitorCountTwo"
   runtime       = "python3.9"
   role          = "arn:aws:iam::571600870518:role/service-role/updateVisitorCount-role-ck3bo9nq"
-  handler       = "lambda_function.lambda_handler"
+  handler       = "lambda.lambda_function.lambda_handler"
 
   filename         = "/Users/graysondeiley/Desktop/Code_Repo1/Terraform/Cloud_Resume/lambda_function.zip"
   source_code_hash = filebase64sha256("/Users/graysondeiley/Desktop/Code_Repo1/Terraform/Cloud_Resume/lambda_function.zip")
