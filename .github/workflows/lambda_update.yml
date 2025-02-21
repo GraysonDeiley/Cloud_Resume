@@ -1,4 +1,4 @@
-name: Update AWS lambda python code
+name: Update AWS lambda python codes
 
 on:
   push:
