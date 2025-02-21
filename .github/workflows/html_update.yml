@@ -34,4 +34,4 @@ jobs:
         run: aws s3 cp html/index.html s3://graysonsbucket
 
       - name: create an invalidation on cloudfront
-        run: aws cloudfront create-invalidation --distribution-id ETSON68HYXCSL --paths /*
+        run: aws cloudfront create-invalidation --distribution-id ETSON68HYXCSL --paths "/*""
