@@ -17,5 +17,5 @@ def lambda_handler(event, context):
         'headers': {
         "Access-Control-Allow-Origin": "*"
     },
-    'body': json.dumps({'count': int(new_count)})  # Convert Decimal to int
+    'body': json.dumps({'count': int(new_count)})  # Convert Decimal to ints
     }
