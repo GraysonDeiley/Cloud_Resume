@@ -31,7 +31,7 @@ jobs:
 
 
       - name: copy files to s3 bucket
-        run: aws s3 cp /Users/graysondeiley/Desktop/Code_Repo1/Terraform/Cloud_Resume/html/index.html s3://graysonsbucket
+        run: aws s3 cp html/index.html s3://graysonsbucket
 
       - name: create an invalidation on cloudfront
         run: aws cloudfront create-invalidation --distribution-id ETSON68HYXCSL --paths /*
