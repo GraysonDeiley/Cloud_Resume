@@ -245,7 +245,7 @@
                         data = JSON.parse(data.body);  // Parse the body manually
                     }
 
-                    // Check if 'count' is available and update the pagesa
+                    // Check if 'count' is available and update the pages
                     const visitorCountElement = document.getElementById("visitor-count");
                     if (visitorCountElement && data && data.count !== undefined) {
                         visitorCountElement.innerText = data.count;
