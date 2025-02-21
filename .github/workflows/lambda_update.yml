@@ -28,7 +28,7 @@ jobs:
           aws-region: us-east-1
 
       - name: Zip Lambda Code
-        run: zip -r lambda_function.zip /Users/graysondeiley/Desktop/Code_Repo1/Terraform/Cloud_Resume/lambda -x '*.git*'
+        run: zip -r lambda_function.zip ./Cloud_Resume/lambda/* -x '*.git*'
 
       - name: Upload to AWS Lambda
         run: aws lambda update-function-code --function-name updateVisitorCount --zip-file fileb://lambda_function.zip --debug
