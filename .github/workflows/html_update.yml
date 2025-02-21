@@ -1,4 +1,4 @@
-name: update html code for website
+name: update html code for websites
 
 on:
   push:
