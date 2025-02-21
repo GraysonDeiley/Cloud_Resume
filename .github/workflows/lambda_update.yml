@@ -27,6 +27,9 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
 
+      - name: List files to check directory structure
+        run: ls -R  # This will show the directory structure
+
       - name: Zip Lambda Code
         run: zip -r lambda_function.zip ./Cloud_Resume/lambda/lambda_function.py -x '*.git*'
 
