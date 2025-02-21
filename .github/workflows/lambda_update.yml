@@ -31,4 +31,4 @@ jobs:
         run: zip -r lambda_function.zip Cloud_Resume/lambda/ -x '*.git*'
 
       - name: Upload to AWS Lambda
-        run: aws lambda update-function-code --function-name updateVisitorCount --zip-file fileb://lambda_function.zip
+        run: aws lambda update-function-code --function-name updateVisitorCount --zip-file fileb://lambda_function.zip --debug
